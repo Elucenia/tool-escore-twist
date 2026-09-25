@@ -1,0 +1,248 @@
+{
+  "tool": {
+    "id": "escore-twist",
+    "title": "Escore TWIST (torção testicular)",
+    "short": "Risco de torção testicular no escroto agudo",
+    "spec": [
+      "cirurgia-pediatrica",
+      "urologia",
+      "medicina-de-emergencia"
+    ],
+    "tier": 1,
+    "desc": "Calcule o escore TWIST para estimar o risco de torção testicular no escroto agudo da criança e decidir entre exploração cirúrgica, ultrassonografia com Doppler ou alta.",
+    "lead": "Estratifica o risco de torção testicular em meninos com escroto agudo pelo exame clínico, para indicar cirurgia imediata, ultrassonografia com Doppler ou descartar a torção.",
+    "fields": [
+      [
+        "edema",
+        "Aumento de volume (edema) do testículo",
+        "chk",
+        {
+          "pts": 2
+        }
+      ],
+      [
+        "duro",
+        "Testículo endurecido",
+        "chk",
+        {
+          "pts": 2
+        }
+      ],
+      [
+        "cremaster",
+        "Reflexo cremastérico ausente",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "nausea",
+        "Náuseas ou vômitos",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "alto",
+        "Testículo elevado (alto na bolsa)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ]
+    ],
+    "score": {
+      "label": "TWIST",
+      "unit": "de 7",
+      "bands": [
+        [
+          0,
+          "low",
+          "Baixo risco (0 a 2): torção improvável",
+          "Na derivação, valor preditivo negativo de 100%: dispensa ultrassonografia de urgência se o quadro clínico for concordante."
+        ],
+        [
+          3,
+          "mid",
+          "Risco intermediário (3 a 4)",
+          "Ultrassonografia com Doppler de urgência, sem atrasar a exploração se houver dúvida."
+        ],
+        [
+          5,
+          "high",
+          "Alto risco (5 a 7): exploração cirúrgica imediata",
+          "Na derivação, valor preditivo positivo de 100%: não atrase a cirurgia por exame de imagem."
+        ]
+      ]
+    },
+    "formula": "<p>2 pontos: edema testicular; testículo endurecido. 1 ponto: reflexo cremastérico ausente; náuseas/vômitos; testículo elevado. Total de 0 a 7.</p>",
+    "table": [
+      [
+        "Pontos",
+        "Risco (Barbosa 2013)",
+        "Conduta"
+      ],
+      [
+        "0 a 2",
+        "Baixo",
+        "Torção improvável"
+      ],
+      [
+        "3 a 4",
+        "Intermediário",
+        "Ultrassonografia com Doppler"
+      ],
+      [
+        "5 a 7",
+        "Alto",
+        "Exploração cirúrgica sem imagem"
+      ]
+    ],
+    "tips": [
+      "Tempo é testículo: a taxa de salvamento cai muito após 6 horas de dor. Com suspeita alta, não espere a ultrassonografia.",
+      "Na derivação original, o exame foi feito por urologistas; em validações com examinadores menos experientes, o desempenho do ponto de corte baixo foi menor: na dúvida, peça o Doppler.",
+      "A torção neonatal e a torção intermitente não foram bem representadas no estudo: não use o escore para descartá-las.",
+      "Sempre examine o abdome e a região inguinal: hérnia encarcerada e torção de apêndice testicular (sinal do ponto azul) entram no diagnóstico diferencial."
+    ],
+    "sources": [
+      [
+        "Barbosa JA et al. Development and initial validation of a scoring system to diagnose testicular torsion in children. J Urol, 2013.",
+        "https://doi.org/10.1016/j.juro.2012.10.056"
+      ]
+    ],
+    "cases": [
+      [
+        "Náuseas e testículo elevado: 2 pontos (baixo risco, limite)",
+        {
+          "nausea": true,
+          "alto": true
+        },
+        {
+          "score": 2,
+          "level": "low"
+        }
+      ],
+      [
+        "Edema e reflexo cremastérico ausente: 3 pontos (intermediário)",
+        {
+          "edema": true,
+          "cremaster": true
+        },
+        {
+          "score": 3,
+          "level": "mid"
+        }
+      ],
+      [
+        "Edema, testículo endurecido e cremastérico ausente: 5 pontos (alto, limite)",
+        {
+          "edema": true,
+          "duro": true,
+          "cremaster": true
+        },
+        {
+          "score": 5,
+          "level": "high"
+        }
+      ],
+      [
+        "Todos os achados: 7 pontos",
+        {
+          "edema": true,
+          "duro": true,
+          "cremaster": true,
+          "nausea": true,
+          "alto": true
+        },
+        {
+          "score": 7,
+          "level": "high"
+        }
+      ]
+    ],
+    "batch": "mulher-crianca",
+    "kind": "Escore",
+    "config": {
+      "unit": "de 7",
+      "label": "TWIST",
+      "fields": [
+        [
+          "edema",
+          "chk",
+          2
+        ],
+        [
+          "duro",
+          "chk",
+          2
+        ],
+        [
+          "cremaster",
+          "chk",
+          1
+        ],
+        [
+          "nausea",
+          "chk",
+          1
+        ],
+        [
+          "alto",
+          "chk",
+          1
+        ]
+      ],
+      "bands": [
+        [
+          0,
+          "low",
+          "Baixo risco (0 a 2): torção improvável",
+          "Na derivação, valor preditivo negativo de 100%: dispensa ultrassonografia de urgência se o quadro clínico for concordante."
+        ],
+        [
+          3,
+          "mid",
+          "Risco intermediário (3 a 4)",
+          "Ultrassonografia com Doppler de urgência, sem atrasar a exploração se houver dúvida."
+        ],
+        [
+          5,
+          "high",
+          "Alto risco (5 a 7): exploração cirúrgica imediata",
+          "Na derivação, valor preditivo positivo de 100%: não atrase a cirurgia por exame de imagem."
+        ]
+      ]
+    },
+    "areaId": "mulher-crianca",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/mulher-crianca.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/mulher-crianca.php",
+    "sha256": "c37d3fefb430d6ec19144161e40e9a08247f3a10406e2873c8d6a4be8649917c",
+    "bytes": 81915
+  },
+  "clinicalValidation": "not-performed"
+}

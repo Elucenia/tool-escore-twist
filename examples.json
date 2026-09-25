@@ -1,0 +1,74 @@
+[
+  {
+    "label": "Náuseas e testículo elevado: 2 pontos (baixo risco, limite)",
+    "input": {
+      "nausea": true,
+      "alto": true
+    },
+    "expected": {
+      "score": 2,
+      "level": "low"
+    },
+    "originalInput": {
+      "nausea": true,
+      "alto": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Edema e reflexo cremastérico ausente: 3 pontos (intermediário)",
+    "input": {
+      "edema": true,
+      "cremaster": true
+    },
+    "expected": {
+      "score": 3,
+      "level": "mid"
+    },
+    "originalInput": {
+      "edema": true,
+      "cremaster": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Edema, testículo endurecido e cremastérico ausente: 5 pontos (alto, limite)",
+    "input": {
+      "edema": true,
+      "duro": true,
+      "cremaster": true
+    },
+    "expected": {
+      "score": 5,
+      "level": "high"
+    },
+    "originalInput": {
+      "edema": true,
+      "duro": true,
+      "cremaster": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Todos os achados: 7 pontos",
+    "input": {
+      "edema": true,
+      "duro": true,
+      "cremaster": true,
+      "nausea": true,
+      "alto": true
+    },
+    "expected": {
+      "score": 7,
+      "level": "high"
+    },
+    "originalInput": {
+      "edema": true,
+      "duro": true,
+      "cremaster": true,
+      "nausea": true,
+      "alto": true
+    },
+    "expandedZeroOptions": []
+  }
+]
