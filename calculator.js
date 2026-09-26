@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-escore-twist · Elucenia · https://github.com/Elucenia/tool-escore-twist
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"escore-twist","title":"Escore TWIST (torção testicular)","fields":[["edema","Aumento de volume (edema) do testículo","chk",{"pts":2}],["duro","Testículo endurecido","chk",{"pts":2}],["cremaster","Reflexo cremastérico ausente","chk",{"pts":1}],["nausea","Náuseas ou vômitos","chk",{"pts":1}],["alto","Testículo elevado (alto na bolsa)","chk",{"pts":1}]],"config":{"unit":"de 7","label":"TWIST","fields":[["edema","chk",2],["duro","chk",2],["cremaster","chk",1],["nausea","chk",1],["alto","chk",1]],"bands":[[0,"low","Baixo risco (0 a 2): torção improvável","Na derivação, valor preditivo negativo de 100%: dispensa ultrassonografia de urgência se o quadro clínico for concordante."],[3,"mid","Risco intermediário (3 a 4)","Ultrassonografia com Doppler de urgência, sem atrasar a exploração se houver dúvida."],[5,"high","Alto risco (5 a 7): exploração cirúrgica imediata","Na derivação, valor preditivo positivo de 100%: não atrase a cirurgia por exame de imagem."]]},"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
