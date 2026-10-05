@@ -3,109 +3,47 @@
     "id": "escore-twist",
     "title": "Escore TWIST (torção testicular)",
     "short": "Risco de torção testicular no escroto agudo",
+    "desc": "Calcule o escore TWIST para estimar o risco de torção testicular no escroto agudo da criança e decidir entre exploração cirúrgica, ultrassonografia com Doppler ou alta.",
+    "lead": "Estratifica o risco de torção testicular em meninos com escroto agudo pelo exame clínico, para indicar cirurgia imediata, ultrassonografia com Doppler ou descartar a torção.",
+    "kind": "Escore",
     "spec": [
       "cirurgia-pediatrica",
       "urologia",
       "medicina-de-emergencia"
     ],
-    "tier": 1,
-    "desc": "Calcule o escore TWIST para estimar o risco de torção testicular no escroto agudo da criança e decidir entre exploração cirúrgica, ultrassonografia com Doppler ou alta.",
-    "lead": "Estratifica o risco de torção testicular em meninos com escroto agudo pelo exame clínico, para indicar cirurgia imediata, ultrassonografia com Doppler ou descartar a torção.",
     "fields": [
       [
         "edema",
         "Aumento de volume (edema) do testículo",
         "chk",
-        {
-          "pts": 2
-        }
+        {}
       ],
       [
         "duro",
         "Testículo endurecido",
         "chk",
-        {
-          "pts": 2
-        }
+        {}
       ],
       [
         "cremaster",
         "Reflexo cremastérico ausente",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "nausea",
         "Náuseas ou vômitos",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "alto",
         "Testículo elevado (alto na bolsa)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ]
     ],
-    "score": {
-      "label": "TWIST",
-      "unit": "de 7",
-      "bands": [
-        [
-          0,
-          "low",
-          "Baixo risco (0 a 2): torção improvável",
-          "Na derivação, valor preditivo negativo de 100%: dispensa ultrassonografia de urgência se o quadro clínico for concordante."
-        ],
-        [
-          3,
-          "mid",
-          "Risco intermediário (3 a 4)",
-          "Ultrassonografia com Doppler de urgência, sem atrasar a exploração se houver dúvida."
-        ],
-        [
-          5,
-          "high",
-          "Alto risco (5 a 7): exploração cirúrgica imediata",
-          "Na derivação, valor preditivo positivo de 100%: não atrase a cirurgia por exame de imagem."
-        ]
-      ]
-    },
     "formula": "<p>2 pontos: edema testicular; testículo endurecido. 1 ponto: reflexo cremastérico ausente; náuseas/vômitos; testículo elevado. Total de 0 a 7.</p>",
-    "table": [
-      [
-        "Pontos",
-        "Risco (Barbosa 2013)",
-        "Conduta"
-      ],
-      [
-        "0 a 2",
-        "Baixo",
-        "Torção improvável"
-      ],
-      [
-        "3 a 4",
-        "Intermediário",
-        "Ultrassonografia com Doppler"
-      ],
-      [
-        "5 a 7",
-        "Alto",
-        "Exploração cirúrgica sem imagem"
-      ]
-    ],
-    "tips": [
-      "Tempo é testículo: a taxa de salvamento cai muito após 6 horas de dor. Com suspeita alta, não espere a ultrassonografia.",
-      "Na derivação original, o exame foi feito por urologistas; em validações com examinadores menos experientes, o desempenho do ponto de corte baixo foi menor: na dúvida, peça o Doppler.",
-      "A torção neonatal e a torção intermitente não foram bem representadas no estudo: não use o escore para descartá-las.",
-      "Sempre examine o abdome e a região inguinal: hérnia encarcerada e torção de apêndice testicular (sinal do ponto azul) entram no diagnóstico diferencial."
-    ],
     "sources": [
       [
         "Barbosa JA et al. Development and initial validation of a scoring system to diagnose testicular torsion in children. J Urol, 2013.",
@@ -162,59 +100,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "de 7",
-      "label": "TWIST",
-      "fields": [
-        [
-          "edema",
-          "chk",
-          2
-        ],
-        [
-          "duro",
-          "chk",
-          2
-        ],
-        [
-          "cremaster",
-          "chk",
-          1
-        ],
-        [
-          "nausea",
-          "chk",
-          1
-        ],
-        [
-          "alto",
-          "chk",
-          1
-        ]
-      ],
-      "bands": [
-        [
-          0,
-          "low",
-          "Baixo risco (0 a 2): torção improvável",
-          "Na derivação, valor preditivo negativo de 100%: dispensa ultrassonografia de urgência se o quadro clínico for concordante."
-        ],
-        [
-          3,
-          "mid",
-          "Risco intermediário (3 a 4)",
-          "Ultrassonografia com Doppler de urgência, sem atrasar a exploração se houver dúvida."
-        ],
-        [
-          5,
-          "high",
-          "Alto risco (5 a 7): exploração cirúrgica imediata",
-          "Na derivação, valor preditivo positivo de 100%: não atrase a cirurgia por exame de imagem."
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -223,17 +108,438 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T19:23:48.452Z",
+      "total": 32,
+      "passed": 32,
+      "sourceRowCount": 32,
+      "uniqueApiInputCount": 32,
+      "sourceContextCount": 32,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "0ce205044753be5e51750af7177dba725dc798ea1ff37e8b2d1ddbedba18e889",
+        "total": 32,
+        "bankRowCount": 32,
+        "uniqueApiInputCount": 32,
+        "sourceContextCount": 32,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/eight-diagnostic-independent-expectations-final26.json",
+            "sha256": "152a977a91b3f4279cac6a749638cae27a306f0bb072fa2400843da0db1e8268"
+          },
+          {
+            "file": "reports/review-20261003/eight-diagnostic-primary-source-review-final26.json",
+            "sha256": "8e4fe23dcd12fa323c509ec5432d30d841fe378f42ce1b05abc2724fa540481b"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/eight-diagnostic-independent-source-check-final26.json",
+          "sha256": "9925c0c432d78f268a3a5dd4d52cef5de566b192d5c3de6e7bbd6895eaf9d2b5"
+        },
+        "packagingRequirement": "Compose separately owned source/rubric/edition changes and fresh build/package/browser bindings before publication."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "sourceRows": 32,
+        "uniqueApiInputs": 32,
+        "duplicateRows": 0,
+        "expectationAudit": {
+          "file": "reports/review-20261003/eight-diagnostic-independent-expectations-final26.json",
+          "sha256": "152a977a91b3f4279cac6a749638cae27a306f0bb072fa2400843da0db1e8268"
+        }
+      },
+      "scope": "original abstract point weights only; threshold equality operators not verified; only exact raw.score projected, no diagnosis/risk/rubric approval.",
+      "sources": [
+        {
+          "contributedPrimaryObservations": {
+            "file": "reports/review-20261003/eight-diagnostic-primary-source-review-final26.json",
+            "sha256": "8e4fe23dcd12fa323c509ec5432d30d841fe378f42ce1b05abc2724fa540481b"
+          },
+          "id": "escore-twist",
+          "edition": "Barbosa2013 J Urol189:1859–1864 DOI10.1016/j.juro.2012.10.056 PMID23103800",
+          "urls": [
+            "https://pubmed.ncbi.nlm.nih.gov/23103800/"
+          ],
+          "files": [
+            "twist2013-pubmed.xml"
+          ],
+          "access": "Complete original abstract directly read via official NCBI XML; publisher direct403/HTMLPubMedfooter preserved. Full original paper/table not read.",
+          "population": "338 pediatric acute-scrotum patients,51torsion, examined by urologist and ultrasound; retrospectively compared with two independent series, one consisting exclusively of torsion. Abstract explicitly requests prospective validation.",
+          "rules": {
+            "testicularSwelling": 2,
+            "hardTestis": 2,
+            "absentCremastericReflex": 1,
+            "nauseaVomiting": 1,
+            "highRidingTestis": 1
+          },
+          "findings": [
+            {
+              "area": "cutoff operators",
+              "status": "access-limited",
+              "source": "Abstract names cutoffs2and5 but does not unambiguously state every equality operator.",
+              "current": "Do not certify categorical threshold inequalities from an abstract alone."
+            }
+          ],
+          "notVerified": [
+            "Original full table/cutoff operators, age/puberty subgroups, management decisions, medical examination accuracy and rights."
+          ],
+          "currentMethodVersion": "TWIST/Barbosa 2013:5 fatores ponderados, total 0–7",
+          "currentToolSha256": "c71934a6bba13f6515ececbd5ee25adf700faf806a1a7b3230c1980c0171db1e"
+        }
+      ],
+      "evidencePath": "reports/review-20261003/eight-diagnostic-independent-source-check-final26.json",
+      "evidenceSha256": "9925c0c432d78f268a3a5dd4d52cef5de566b192d5c3de6e7bbd6895eaf9d2b5",
+      "independentPeer": {
+        "status": "passed-scoped-numeric",
+        "evidence": {
+          "file": "reports/review-20261003/eight-diagnostic-numeric-independent-peer-verify-final27.json",
+          "sha256": "e7bddba5c7de286f91fa8c431512f512849302646394d88663afe8142e079a7d"
+        },
+        "scope": "Independent primary table/abstract reading, own selected-point expectations persisted before engines, exact numeric three-adapter Node/isolated Chromium. Clinical/risk/rubric/full-method conformance excluded; McIsaac final-clamp findings retained and excluded from this six-method projection."
+      },
+      "freshAdapterExecutions": 96,
+      "freshVmExecutions": 96,
+      "actualBrowserEvidenceScope": "Old actual Chromium receipt uses only website adapter; three adapters have independently completed Node/VM and new Verify Chromium peer. This bank explicitly names original website-only browser observations; no reassignment to other mirrors.",
+      "implementations": [
+        {
+          "id": "escore-twist",
+          "app": "website",
+          "file": "apps/website/private/tool-code/escore-twist/calculator.js",
+          "sha256": "5a1daba0ac54a890546047dfa71cd9a59b10b7f61fdb46790192b9218c2aab14"
+        },
+        {
+          "id": "escore-twist",
+          "app": "dashboard",
+          "file": "apps/dashboard/private/tool-code/escore-twist/calculator.js",
+          "sha256": "5a1daba0ac54a890546047dfa71cd9a59b10b7f61fdb46790192b9218c2aab14"
+        },
+        {
+          "id": "escore-twist",
+          "app": "command-center",
+          "file": "apps/command-center/private/tool-code/escore-twist/calculator.js",
+          "sha256": "5a1daba0ac54a890546047dfa71cd9a59b10b7f61fdb46790192b9218c2aab14"
+        }
+      ],
+      "qualifications": [
+        "Original full table/cutoff operators, age/puberty subgroups, management decisions, medical examination accuracy and rights.",
+        "Primary-source reading and access are recorded by the contributing source reviewer and independent numeric peer; this integration does not claim another full source reading.",
+        "Only raw.score selected-point arithmetic is included. Clinical categories, main text, private level/verdict/note/rows, prognosis, diagnosis, management and unmeasured feature classification are excluded.",
+        "All source scenarios in this bank and the original donor reports remain retained. Mirror/runtime calculations do not multiply scenario counts. Inline four examples are a subset of the complete downloadable bank.",
+        "Source fields, rubric/edition labels, clinical scope notes and localization changes have separate ownership and must be composed without replacing whole catalogs. All862 historic fixtures/tolerances and approval flags remain unchanged.",
+        "Fresh source/build/packages and browser journey bindings are required before publication. No already-served website or final package proof is claimed by this preparation."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "metadataPackagingPeer": {
+        "status": "passed",
+        "scope": "Bounded independent review of the original source bank and its metadata/helper. Prospective code rebinding is separately re-executed below and requires the final composition peer; no human approval inferred.",
+        "peer": {
+          "file": "reports/review-20261003/six-diagnostic-bank-metadata-independent-review-western-final27.json",
+          "sha256": "8f308a904c18e2d57f6d6b37c660021e399df5bd766589b89c9c03f2fa7d141c"
+        },
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "prospectiveSource27Bindings": [
+        {
+          "file": "apps/website/private/tool-code/escore-twist/calculator.js",
+          "sha256": "5a1daba0ac54a890546047dfa71cd9a59b10b7f61fdb46790192b9218c2aab14"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/escore-twist/calculator.js",
+          "sha256": "5a1daba0ac54a890546047dfa71cd9a59b10b7f61fdb46790192b9218c2aab14"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/escore-twist/calculator.js",
+          "sha256": "5a1daba0ac54a890546047dfa71cd9a59b10b7f61fdb46790192b9218c2aab14"
+        }
+      ],
+      "prospectiveSource27Replay": {
+        "file": "reports/review-20261003/source27-complete-bank-current-replay-root-r3.json",
+        "sha256": "44c601f27d3d5051a8d55a581381112b58df36c7c4b6cfd24ce1249b263d6a2b"
+      },
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "TWIST/Barbosa 2013:5 fatores ponderados, total 0–7",
+    "implementationVersion": "escore-twist@native-2026-10-03+5a1daba0ac54",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/23103800/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "2 pontos: edema testicular; testículo endurecido. 1 ponto: reflexo cremastérico ausente; náuseas/vômitos; testículo elevado. Total de 0 a 7.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "edema",
+            "label": "Aumento de volume (edema) do testículo",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "duro",
+            "label": "Testículo endurecido",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "cremaster",
+            "label": "Reflexo cremastérico ausente",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "nausea",
+            "label": "Náuseas ou vômitos",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "alto",
+            "label": "Testículo elevado (alto na bolsa)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "889a0d7a0b1a8a97629277d4849e6448e4fdde06a769ed31978f4940320c22d5"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Barbosa JA et al. Development and initial validation of a scoring system to diagnose testicular torsion in children. J Urol, 2013.",
+          "url": "https://doi.org/10.1016/j.juro.2012.10.056",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Development and initial validation of a scoring system to diagnose testicular torsion in children.",
+            "year": "2013",
+            "firstPublicationDate": "2012-10-24",
+            "doi": "10.1016/j.juro.2012.10.056",
+            "pmid": "23103800",
+            "journal": "The Journal of urology",
+            "authors": "Barbosa JA, Tiseo BC, Barayan GA, Rosman BM, Torricelli FC, Passerotti CC, Srougi M, Retik AB, Nguyen HT."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/23103800/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "a0d24b8574ad605dc95a9607baabdf487e3e73708c763934b7eb2b2afc635a34",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T19:23:48.452Z",
+        "total": 32,
+        "passed": 32,
+        "sourceRowCount": 32,
+        "uniqueApiInputCount": 32,
+        "sourceContextCount": 32,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "0ce205044753be5e51750af7177dba725dc798ea1ff37e8b2d1ddbedba18e889",
+          "total": 32,
+          "bankRowCount": 32,
+          "uniqueApiInputCount": 32,
+          "sourceContextCount": 32,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/eight-diagnostic-independent-expectations-final26.json",
+              "sha256": "152a977a91b3f4279cac6a749638cae27a306f0bb072fa2400843da0db1e8268"
+            },
+            {
+              "file": "reports/review-20261003/eight-diagnostic-primary-source-review-final26.json",
+              "sha256": "8e4fe23dcd12fa323c509ec5432d30d841fe378f42ce1b05abc2724fa540481b"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/eight-diagnostic-independent-source-check-final26.json",
+            "sha256": "9925c0c432d78f268a3a5dd4d52cef5de566b192d5c3de6e7bbd6895eaf9d2b5"
+          },
+          "packagingRequirement": "Compose separately owned source/rubric/edition changes and fresh build/package/browser bindings before publication."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "sourceRows": 32,
+          "uniqueApiInputs": 32,
+          "duplicateRows": 0,
+          "expectationAudit": {
+            "file": "reports/review-20261003/eight-diagnostic-independent-expectations-final26.json",
+            "sha256": "152a977a91b3f4279cac6a749638cae27a306f0bb072fa2400843da0db1e8268"
+          }
+        },
+        "scope": "original abstract point weights only; threshold equality operators not verified; only exact raw.score projected, no diagnosis/risk/rubric approval.",
+        "sources": [
+          {
+            "contributedPrimaryObservations": {
+              "file": "reports/review-20261003/eight-diagnostic-primary-source-review-final26.json",
+              "sha256": "8e4fe23dcd12fa323c509ec5432d30d841fe378f42ce1b05abc2724fa540481b"
+            },
+            "id": "escore-twist",
+            "edition": "Barbosa2013 J Urol189:1859–1864 DOI10.1016/j.juro.2012.10.056 PMID23103800",
+            "urls": [
+              "https://pubmed.ncbi.nlm.nih.gov/23103800/"
+            ],
+            "files": [
+              "twist2013-pubmed.xml"
+            ],
+            "access": "Complete original abstract directly read via official NCBI XML; publisher direct403/HTMLPubMedfooter preserved. Full original paper/table not read.",
+            "population": "338 pediatric acute-scrotum patients,51torsion, examined by urologist and ultrasound; retrospectively compared with two independent series, one consisting exclusively of torsion. Abstract explicitly requests prospective validation.",
+            "rules": {
+              "testicularSwelling": 2,
+              "hardTestis": 2,
+              "absentCremastericReflex": 1,
+              "nauseaVomiting": 1,
+              "highRidingTestis": 1
+            },
+            "findings": [
+              {
+                "area": "cutoff operators",
+                "status": "access-limited",
+                "source": "Abstract names cutoffs2and5 but does not unambiguously state every equality operator.",
+                "current": "Do not certify categorical threshold inequalities from an abstract alone."
+              }
+            ],
+            "notVerified": [
+              "Original full table/cutoff operators, age/puberty subgroups, management decisions, medical examination accuracy and rights."
+            ],
+            "currentMethodVersion": "TWIST/Barbosa 2013:5 fatores ponderados, total 0–7",
+            "currentToolSha256": "c71934a6bba13f6515ececbd5ee25adf700faf806a1a7b3230c1980c0171db1e"
+          }
+        ],
+        "evidencePath": "reports/review-20261003/eight-diagnostic-independent-source-check-final26.json",
+        "evidenceSha256": "9925c0c432d78f268a3a5dd4d52cef5de566b192d5c3de6e7bbd6895eaf9d2b5",
+        "independentPeer": {
+          "status": "passed-scoped-numeric",
+          "evidence": {
+            "file": "reports/review-20261003/eight-diagnostic-numeric-independent-peer-verify-final27.json",
+            "sha256": "e7bddba5c7de286f91fa8c431512f512849302646394d88663afe8142e079a7d"
+          },
+          "scope": "Independent primary table/abstract reading, own selected-point expectations persisted before engines, exact numeric three-adapter Node/isolated Chromium. Clinical/risk/rubric/full-method conformance excluded; McIsaac final-clamp findings retained and excluded from this six-method projection."
+        },
+        "freshAdapterExecutions": 96,
+        "freshVmExecutions": 96,
+        "actualBrowserEvidenceScope": "Old actual Chromium receipt uses only website adapter; three adapters have independently completed Node/VM and new Verify Chromium peer. This bank explicitly names original website-only browser observations; no reassignment to other mirrors.",
+        "implementations": [
+          {
+            "id": "escore-twist",
+            "app": "website",
+            "file": "apps/website/private/tool-code/escore-twist/calculator.js",
+            "sha256": "5a1daba0ac54a890546047dfa71cd9a59b10b7f61fdb46790192b9218c2aab14"
+          },
+          {
+            "id": "escore-twist",
+            "app": "dashboard",
+            "file": "apps/dashboard/private/tool-code/escore-twist/calculator.js",
+            "sha256": "5a1daba0ac54a890546047dfa71cd9a59b10b7f61fdb46790192b9218c2aab14"
+          },
+          {
+            "id": "escore-twist",
+            "app": "command-center",
+            "file": "apps/command-center/private/tool-code/escore-twist/calculator.js",
+            "sha256": "5a1daba0ac54a890546047dfa71cd9a59b10b7f61fdb46790192b9218c2aab14"
+          }
+        ],
+        "qualifications": [
+          "Original full table/cutoff operators, age/puberty subgroups, management decisions, medical examination accuracy and rights.",
+          "Primary-source reading and access are recorded by the contributing source reviewer and independent numeric peer; this integration does not claim another full source reading.",
+          "Only raw.score selected-point arithmetic is included. Clinical categories, main text, private level/verdict/note/rows, prognosis, diagnosis, management and unmeasured feature classification are excluded.",
+          "All source scenarios in this bank and the original donor reports remain retained. Mirror/runtime calculations do not multiply scenario counts. Inline four examples are a subset of the complete downloadable bank.",
+          "Source fields, rubric/edition labels, clinical scope notes and localization changes have separate ownership and must be composed without replacing whole catalogs. All862 historic fixtures/tolerances and approval flags remain unchanged.",
+          "Fresh source/build/packages and browser journey bindings are required before publication. No already-served website or final package proof is claimed by this preparation."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "metadataPackagingPeer": {
+          "status": "passed",
+          "scope": "Bounded independent review of the original source bank and its metadata/helper. Prospective code rebinding is separately re-executed below and requires the final composition peer; no human approval inferred.",
+          "peer": {
+            "file": "reports/review-20261003/six-diagnostic-bank-metadata-independent-review-western-final27.json",
+            "sha256": "8f308a904c18e2d57f6d6b37c660021e399df5bd766589b89c9c03f2fa7d141c"
+          },
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "prospectiveSource27Bindings": [
+          {
+            "file": "apps/website/private/tool-code/escore-twist/calculator.js",
+            "sha256": "5a1daba0ac54a890546047dfa71cd9a59b10b7f61fdb46790192b9218c2aab14"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/escore-twist/calculator.js",
+            "sha256": "5a1daba0ac54a890546047dfa71cd9a59b10b7f61fdb46790192b9218c2aab14"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/escore-twist/calculator.js",
+            "sha256": "5a1daba0ac54a890546047dfa71cd9a59b10b7f61fdb46790192b9218c2aab14"
+          }
+        ],
+        "prospectiveSource27Replay": {
+          "file": "reports/review-20261003/source27-complete-bank-current-replay-root-r3.json",
+          "sha256": "44c601f27d3d5051a8d55a581381112b58df36c7c4b6cfd24ce1249b263d6a2b"
+        },
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "5a1daba0ac54a890546047dfa71cd9a59b10b7f61fdb46790192b9218c2aab14"
+    },
+    "limits": "O TWIST 2013 foi inicialmente desenvolvido em crianças com escroto agudo, com exame por urologista e ultrassonografia em todos os 338 pacientes da coorte prospectiva. Os cortes 2 e 5 foram avaliados também retrospectivamente; os autores ainda solicitaram validação prospectiva. Esses resultados não garantem ausência de torção em uma pessoa nem substituem avaliação urgente de uma possível emergência cirúrgica.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.951Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Idade/faixa puberal, exclusões e validações posteriores não foram confirmadas no resumo. Os valores preditivos da coorte não tornam um escore negativo uma garantia individual."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/escore-twist/calculator.js",
+    "bytes": 4968,
+    "sha256": "5a1daba0ac54a890546047dfa71cd9a59b10b7f61fdb46790192b9218c2aab14"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "1edf2446783ec91141e6f6182a57e8baed4b64676f100ad2872082e98891732a",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "24a6f21ccffd344f5577cbdc9881229863dc55a02139f10dbb15b29c3a000df1",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "24a6f21ccffd344f5577cbdc9881229863dc55a02139f10dbb15b29c3a000df1",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

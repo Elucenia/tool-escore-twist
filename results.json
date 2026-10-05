@@ -1,0 +1,350 @@
+{
+  "id": "escore-twist",
+  "at": "2026-10-05T17:29:32.002Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/escore-twist/calculator.js",
+    "bytes": 4968,
+    "sha256": "5a1daba0ac54a890546047dfa71cd9a59b10b7f61fdb46790192b9218c2aab14"
+  },
+  "cases": [
+    {
+      "name": "Náuseas e testículo elevado: 2 pontos (baixo risco, limite)",
+      "input": {
+        "nausea": true,
+        "alto": true,
+        "edema": false,
+        "duro": false,
+        "cremaster": false
+      },
+      "obtained": {
+        "id": "escore-twist",
+        "main": [
+          "2",
+          "de 7"
+        ],
+        "label": "TWIST",
+        "raw": {
+          "score": 2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 2,
+          "obtained": 2,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 2,
+          "obtained": 2,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "2",
+          "obtained": "2",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "de 7",
+          "obtained": "de 7",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Edema e reflexo cremastérico ausente: 3 pontos (intermediário)",
+      "input": {
+        "edema": true,
+        "cremaster": true,
+        "duro": false,
+        "nausea": false,
+        "alto": false
+      },
+      "obtained": {
+        "id": "escore-twist",
+        "main": [
+          "3",
+          "de 7"
+        ],
+        "label": "TWIST",
+        "raw": {
+          "score": 3
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 3,
+          "obtained": 3,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 3,
+          "obtained": 3,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "3",
+          "obtained": "3",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "de 7",
+          "obtained": "de 7",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Edema, testículo endurecido e cremastérico ausente: 5 pontos (alto, limite)",
+      "input": {
+        "edema": true,
+        "duro": true,
+        "cremaster": true,
+        "nausea": false,
+        "alto": false
+      },
+      "obtained": {
+        "id": "escore-twist",
+        "main": [
+          "5",
+          "de 7"
+        ],
+        "label": "TWIST",
+        "raw": {
+          "score": 5
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 5,
+          "obtained": 5,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 5,
+          "obtained": 5,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "5",
+          "obtained": "5",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "de 7",
+          "obtained": "de 7",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Todos os achados: 7 pontos",
+      "input": {
+        "edema": true,
+        "duro": true,
+        "cremaster": true,
+        "nausea": true,
+        "alto": true
+      },
+      "obtained": {
+        "id": "escore-twist",
+        "main": [
+          "7",
+          "de 7"
+        ],
+        "label": "TWIST",
+        "raw": {
+          "score": 7
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 7,
+          "obtained": 7,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 7,
+          "obtained": 7,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "7",
+          "obtained": "7",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "de 7",
+          "obtained": "de 7",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 9,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

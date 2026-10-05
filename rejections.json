@@ -1,0 +1,113 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean edema",
+    "input": {
+      "nausea": true,
+      "alto": true,
+      "edema": "2",
+      "duro": false,
+      "cremaster": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "edema"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean duro",
+    "input": {
+      "nausea": true,
+      "alto": true,
+      "edema": false,
+      "duro": "2",
+      "cremaster": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "duro"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean cremaster",
+    "input": {
+      "nausea": true,
+      "alto": true,
+      "edema": false,
+      "duro": false,
+      "cremaster": "2"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cremaster"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean nausea",
+    "input": {
+      "nausea": "2",
+      "alto": true,
+      "edema": false,
+      "duro": false,
+      "cremaster": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "nausea"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean alto",
+    "input": {
+      "nausea": true,
+      "alto": "2",
+      "edema": false,
+      "duro": false,
+      "cremaster": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "alto"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]
