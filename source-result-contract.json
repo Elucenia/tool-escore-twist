@@ -1,0 +1,228 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "escore-twist",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "1171d3fc9a82b0e2049e832cd4a89b7e6ca76c16",
+    "oldEngineSha256": "5a1daba0ac54a890546047dfa71cd9a59b10b7f61fdb46790192b9218c2aab14",
+    "currentEngineSha256": "2fd10612bea77a7f67bacb544578d387a092e8b689b774ffc184d5feb7f53eab"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Náuseas e testículo elevado: 2 pontos (baixo risco, limite)",
+      "input": {
+        "nausea": true,
+        "alto": true,
+        "edema": false,
+        "duro": false,
+        "cremaster": false
+      },
+      "publicOutput": {
+        "id": "escore-twist",
+        "main": [
+          "2",
+          "de 7"
+        ],
+        "label": "TWIST",
+        "raw": {
+          "score": 2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 2,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "2",
+          "de 7"
+        ],
+        "label": "TWIST",
+        "level": "low",
+        "verdict": "Baixo risco (0 a 2): torção improvável",
+        "note": "Na derivação, valor preditivo negativo de 100%: dispensa ultrassonografia de urgência se o quadro clínico for concordante.",
+        "raw": {
+          "score": 2
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Edema e reflexo cremastérico ausente: 3 pontos (intermediário)",
+      "input": {
+        "edema": true,
+        "cremaster": true,
+        "duro": false,
+        "nausea": false,
+        "alto": false
+      },
+      "publicOutput": {
+        "id": "escore-twist",
+        "main": [
+          "3",
+          "de 7"
+        ],
+        "label": "TWIST",
+        "raw": {
+          "score": 3
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 3,
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "3",
+          "de 7"
+        ],
+        "label": "TWIST",
+        "level": "mid",
+        "verdict": "Risco intermediário (3 a 4)",
+        "note": "Ultrassonografia com Doppler de urgência, sem atrasar a exploração se houver dúvida.",
+        "raw": {
+          "score": 3
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Edema, testículo endurecido e cremastérico ausente: 5 pontos (alto, limite)",
+      "input": {
+        "edema": true,
+        "duro": true,
+        "cremaster": true,
+        "nausea": false,
+        "alto": false
+      },
+      "publicOutput": {
+        "id": "escore-twist",
+        "main": [
+          "5",
+          "de 7"
+        ],
+        "label": "TWIST",
+        "raw": {
+          "score": 5
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 5,
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "5",
+          "de 7"
+        ],
+        "label": "TWIST",
+        "level": "high",
+        "verdict": "Alto risco (5 a 7): exploração cirúrgica imediata",
+        "note": "Na derivação, valor preditivo positivo de 100%: não atrase a cirurgia por exame de imagem.",
+        "raw": {
+          "score": 5
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Todos os achados: 7 pontos",
+      "input": {
+        "edema": true,
+        "duro": true,
+        "cremaster": true,
+        "nausea": true,
+        "alto": true
+      },
+      "publicOutput": {
+        "id": "escore-twist",
+        "main": [
+          "7",
+          "de 7"
+        ],
+        "label": "TWIST",
+        "raw": {
+          "score": 7
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 7,
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "7",
+          "de 7"
+        ],
+        "label": "TWIST",
+        "level": "high",
+        "verdict": "Alto risco (5 a 7): exploração cirúrgica imediata",
+        "note": "Na derivação, valor preditivo positivo de 100%: não atrase a cirurgia por exame de imagem.",
+        "raw": {
+          "score": 7
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    }
+  ]
+}

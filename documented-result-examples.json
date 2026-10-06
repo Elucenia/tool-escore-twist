@@ -1,0 +1,707 @@
+{
+  "id": "escore-twist",
+  "implementationVersion": "escore-twist@native-2026-10-05+2fd10612bea7",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Náuseas e testículo elevado: 2 pontos (baixo risco, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Baixo risco (0 a 2): torção improvável",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Na derivação, valor preditivo negativo de 100%: dispensa ultrassonografia de urgência se o quadro clínico for concordante.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Edema e reflexo cremastérico ausente: 3 pontos (intermediário)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Risco intermediário (3 a 4)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Ultrassonografia com Doppler de urgência, sem atrasar a exploração se houver dúvida.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Edema, testículo endurecido e cremastérico ausente: 5 pontos (alto, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Alto risco (5 a 7): exploração cirúrgica imediata",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Na derivação, valor preditivo positivo de 100%: não atrase a cirurgia por exame de imagem.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os achados: 7 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Alto risco (5 a 7): exploração cirúrgica imediata",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Na derivação, valor preditivo positivo de 100%: não atrase a cirurgia por exame de imagem.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Náuseas e testículo elevado: 2 pontos (baixo risco, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Low risk (0 to 2): torsion unlikely",
+            "locale": "en",
+            "template": "documented-authored-197df4610a31541722b9"
+          },
+          "note": {
+            "text": "In derivation, negative predictive value of 100%: urgent ultrasound is not needed if the clinical picture is concordant.",
+            "locale": "en",
+            "template": "documented-authored-0793cd0e0330526ba4f9"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Edema e reflexo cremastérico ausente: 3 pontos (intermediário)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Intermediate risk (3 to 4)",
+            "locale": "en",
+            "template": "documented-authored-14384c2b12ac788ec7e2"
+          },
+          "note": {
+            "text": "Urgent Doppler ultrasonography, without delaying exploration if there is doubt.",
+            "locale": "en",
+            "template": "documented-authored-62e650bece8041991292"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Edema, testículo endurecido e cremastérico ausente: 5 pontos (alto, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "High risk (5 to 7): immediate surgical exploration",
+            "locale": "en",
+            "template": "documented-authored-4ae28094090310f5883b"
+          },
+          "note": {
+            "text": "In derivation, positive predictive value of 100%: do not delay surgery for imaging.",
+            "locale": "en",
+            "template": "documented-authored-133636cab2e242294882"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os achados: 7 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "High risk (5 to 7): immediate surgical exploration",
+            "locale": "en",
+            "template": "documented-authored-4ae28094090310f5883b"
+          },
+          "note": {
+            "text": "In derivation, positive predictive value of 100%: do not delay surgery for imaging.",
+            "locale": "en",
+            "template": "documented-authored-133636cab2e242294882"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Náuseas e testículo elevado: 2 pontos (baixo risco, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Riesgo bajo (0 a 2): torsión improbable",
+            "locale": "es",
+            "template": "documented-authored-197df4610a31541722b9"
+          },
+          "note": {
+            "text": "En la derivación, valor predictivo negativo de 100%: no se requiere ultrasonografía urgente si el cuadro clínico es concordante.",
+            "locale": "es",
+            "template": "documented-authored-0793cd0e0330526ba4f9"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Edema e reflexo cremastérico ausente: 3 pontos (intermediário)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Riesgo intermedio (3 a 4)",
+            "locale": "es",
+            "template": "documented-authored-14384c2b12ac788ec7e2"
+          },
+          "note": {
+            "text": "Ecografía Doppler urgente, sin retrasar la exploración si hay duda.",
+            "locale": "es",
+            "template": "documented-authored-62e650bece8041991292"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Edema, testículo endurecido e cremastérico ausente: 5 pontos (alto, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Alto riesgo (5 a 7): exploración quirúrgica inmediata",
+            "locale": "es",
+            "template": "documented-authored-4ae28094090310f5883b"
+          },
+          "note": {
+            "text": "En la derivación, valor predictivo positivo de 100%: no retrase la cirugía por estudios de imagen.",
+            "locale": "es",
+            "template": "documented-authored-133636cab2e242294882"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os achados: 7 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Alto riesgo (5 a 7): exploración quirúrgica inmediata",
+            "locale": "es",
+            "template": "documented-authored-4ae28094090310f5883b"
+          },
+          "note": {
+            "text": "En la derivación, valor predictivo positivo de 100%: no retrase la cirugía por estudios de imagen.",
+            "locale": "es",
+            "template": "documented-authored-133636cab2e242294882"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Náuseas e testículo elevado: 2 pontos (baixo risco, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Risque faible (0 à 2) : torsion improbable",
+            "locale": "fr",
+            "template": "documented-authored-197df4610a31541722b9"
+          },
+          "note": {
+            "text": "Dans la dérivation, valeur prédictive négative de 100 % : l'échographie en urgence n'est pas nécessaire si le tableau clinique est concordant.",
+            "locale": "fr",
+            "template": "documented-authored-0793cd0e0330526ba4f9"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Edema e reflexo cremastérico ausente: 3 pontos (intermediário)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Risque intermédiaire (3 à 4)",
+            "locale": "fr",
+            "template": "documented-authored-14384c2b12ac788ec7e2"
+          },
+          "note": {
+            "text": "Échographie Doppler en urgence, sans retarder l’exploration en cas de doute.",
+            "locale": "fr",
+            "template": "documented-authored-62e650bece8041991292"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Edema, testículo endurecido e cremastérico ausente: 5 pontos (alto, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Risque élevé (5 à 7) : exploration chirurgicale immédiate",
+            "locale": "fr",
+            "template": "documented-authored-4ae28094090310f5883b"
+          },
+          "note": {
+            "text": "Lors de la dérivation, valeur prédictive positive de 100 % : ne retardez pas la chirurgie pour l’imagerie.",
+            "locale": "fr",
+            "template": "documented-authored-133636cab2e242294882"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os achados: 7 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Risque élevé (5 à 7) : exploration chirurgicale immédiate",
+            "locale": "fr",
+            "template": "documented-authored-4ae28094090310f5883b"
+          },
+          "note": {
+            "text": "Lors de la dérivation, valeur prédictive positive de 100 % : ne retardez pas la chirurgie pour l’imagerie.",
+            "locale": "fr",
+            "template": "documented-authored-133636cab2e242294882"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Náuseas e testículo elevado: 2 pontos (baixo risco, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Niedriges Risiko (0 bis 2): Torsion unwahrscheinlich",
+            "locale": "de",
+            "template": "documented-authored-197df4610a31541722b9"
+          },
+          "note": {
+            "text": "In der Ableitung betrug der negative prädiktive Wert 100 %: Eine dringliche Sonographie ist nicht erforderlich, wenn das klinische Bild übereinstimmt.",
+            "locale": "de",
+            "template": "documented-authored-0793cd0e0330526ba4f9"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Edema e reflexo cremastérico ausente: 3 pontos (intermediário)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mittleres Risiko (3 bis 4)",
+            "locale": "de",
+            "template": "documented-authored-14384c2b12ac788ec7e2"
+          },
+          "note": {
+            "text": "Dringende Doppler-Ultraschalluntersuchung, ohne die Exploration bei Unklarheit zu verzögern.",
+            "locale": "de",
+            "template": "documented-authored-62e650bece8041991292"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Edema, testículo endurecido e cremastérico ausente: 5 pontos (alto, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Hohes Risiko (5 bis 7): sofortige chirurgische Exploration",
+            "locale": "de",
+            "template": "documented-authored-4ae28094090310f5883b"
+          },
+          "note": {
+            "text": "In der Ableitung ein positiver prädiktiver Wert von 100 %: die Operation nicht durch Bildgebung verzögern.",
+            "locale": "de",
+            "template": "documented-authored-133636cab2e242294882"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os achados: 7 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Hohes Risiko (5 bis 7): sofortige chirurgische Exploration",
+            "locale": "de",
+            "template": "documented-authored-4ae28094090310f5883b"
+          },
+          "note": {
+            "text": "In der Ableitung ein positiver prädiktiver Wert von 100 %: die Operation nicht durch Bildgebung verzögern.",
+            "locale": "de",
+            "template": "documented-authored-133636cab2e242294882"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Náuseas e testículo elevado: 2 pontos (baixo risco, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Rischio basso (0 a 2): torsione improbabile",
+            "locale": "it",
+            "template": "documented-authored-197df4610a31541722b9"
+          },
+          "note": {
+            "text": "Nella derivazione, valore predittivo negativo del 100%: l'ecografia urgente non è necessaria se il quadro clinico è concordante.",
+            "locale": "it",
+            "template": "documented-authored-0793cd0e0330526ba4f9"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Edema e reflexo cremastérico ausente: 3 pontos (intermediário)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Rischio intermedio (3 a 4)",
+            "locale": "it",
+            "template": "documented-authored-14384c2b12ac788ec7e2"
+          },
+          "note": {
+            "text": "Ecografia Doppler urgente, senza ritardare l’esplorazione in caso di dubbio.",
+            "locale": "it",
+            "template": "documented-authored-62e650bece8041991292"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Edema, testículo endurecido e cremastérico ausente: 5 pontos (alto, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Rischio elevato (5 a 7): esplorazione chirurgica immediata",
+            "locale": "it",
+            "template": "documented-authored-4ae28094090310f5883b"
+          },
+          "note": {
+            "text": "Nella derivazione, valore predittivo positivo del 100%: non ritardare l’intervento chirurgico per esami di imaging.",
+            "locale": "it",
+            "template": "documented-authored-133636cab2e242294882"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os achados: 7 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Rischio elevato (5 a 7): esplorazione chirurgica immediata",
+            "locale": "it",
+            "template": "documented-authored-4ae28094090310f5883b"
+          },
+          "note": {
+            "text": "Nella derivazione, valore predittivo positivo del 100%: non ritardare l’intervento chirurgico per esami di imaging.",
+            "locale": "it",
+            "template": "documented-authored-133636cab2e242294882"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Náuseas e testículo elevado: 2 pontos (baixo risco, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "خطورة منخفضة (0 إلى 2): الالتواء غير مرجح",
+            "locale": "ar",
+            "template": "documented-authored-197df4610a31541722b9"
+          },
+          "note": {
+            "text": "في مرحلة الاشتقاق، كانت القيمة التنبؤية السلبية 100%: لا حاجة إلى التصوير بالأمواج فوق الصوتية بشكل عاجل إذا كانت الصورة السريرية متوافقة.",
+            "locale": "ar",
+            "template": "documented-authored-0793cd0e0330526ba4f9"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Edema e reflexo cremastérico ausente: 3 pontos (intermediário)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "خطر متوسط (3 إلى 4)",
+            "locale": "ar",
+            "template": "documented-authored-14384c2b12ac788ec7e2"
+          },
+          "note": {
+            "text": "تصوير بالموجات فوق الصوتية دوبلر بشكل عاجل، دون تأخير الاستكشاف إذا وُجد شك.",
+            "locale": "ar",
+            "template": "documented-authored-62e650bece8041991292"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Edema, testículo endurecido e cremastérico ausente: 5 pontos (alto, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "خطر مرتفع (5 إلى 7): استكشاف جراحي فوري",
+            "locale": "ar",
+            "template": "documented-authored-4ae28094090310f5883b"
+          },
+          "note": {
+            "text": "في الاشتقاق، القيمة التنبؤية الإيجابية 100%: لا تؤخر الجراحة بسبب التصوير.",
+            "locale": "ar",
+            "template": "documented-authored-133636cab2e242294882"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os achados: 7 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "خطر مرتفع (5 إلى 7): استكشاف جراحي فوري",
+            "locale": "ar",
+            "template": "documented-authored-4ae28094090310f5883b"
+          },
+          "note": {
+            "text": "في الاشتقاق، القيمة التنبؤية الإيجابية 100%: لا تؤخر الجراحة بسبب التصوير.",
+            "locale": "ar",
+            "template": "documented-authored-133636cab2e242294882"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Náuseas e testículo elevado: 2 pontos (baixo risco, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "低风险（0 到 2）：睾丸扭转可能性小",
+            "locale": "zh",
+            "template": "documented-authored-197df4610a31541722b9"
+          },
+          "note": {
+            "text": "在建模中，阴性预测值为 100%：若临床表现相符，则无需紧急超声检查。",
+            "locale": "zh",
+            "template": "documented-authored-0793cd0e0330526ba4f9"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Edema e reflexo cremastérico ausente: 3 pontos (intermediário)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中等风险（3到4）",
+            "locale": "zh",
+            "template": "documented-authored-14384c2b12ac788ec7e2"
+          },
+          "note": {
+            "text": "紧急多普勒超声检查，如有疑问，不要延迟探查。",
+            "locale": "zh",
+            "template": "documented-authored-62e650bece8041991292"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Edema, testículo endurecido e cremastérico ausente: 5 pontos (alto, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "高风险（5到7）：立即进行外科探查",
+            "locale": "zh",
+            "template": "documented-authored-4ae28094090310f5883b"
+          },
+          "note": {
+            "text": "在推导中，阳性预测值为100%：不要因影像检查而延迟手术。",
+            "locale": "zh",
+            "template": "documented-authored-133636cab2e242294882"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os achados: 7 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "高风险（5到7）：立即进行外科探查",
+            "locale": "zh",
+            "template": "documented-authored-4ae28094090310f5883b"
+          },
+          "note": {
+            "text": "在推导中，阳性预测值为100%：不要因影像检查而延迟手术。",
+            "locale": "zh",
+            "template": "documented-authored-133636cab2e242294882"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Náuseas e testículo elevado: 2 pontos (baixo risco, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "低リスク（0～2）：捻転は考えにくい",
+            "locale": "ja",
+            "template": "documented-authored-197df4610a31541722b9"
+          },
+          "note": {
+            "text": "導出では陰性的中率は100%であった：臨床像が一致していれば緊急超音波は不要である。",
+            "locale": "ja",
+            "template": "documented-authored-0793cd0e0330526ba4f9"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Edema e reflexo cremastérico ausente: 3 pontos (intermediário)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中等度リスク（3〜4）",
+            "locale": "ja",
+            "template": "documented-authored-14384c2b12ac788ec7e2"
+          },
+          "note": {
+            "text": "緊急ドップラー超音波検査。疑いがある場合は、探査を遅らせない。",
+            "locale": "ja",
+            "template": "documented-authored-62e650bece8041991292"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Edema, testículo endurecido e cremastérico ausente: 5 pontos (alto, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "高リスク（5〜7）：直ちに外科的探査",
+            "locale": "ja",
+            "template": "documented-authored-4ae28094090310f5883b"
+          },
+          "note": {
+            "text": "導出研究では陽性的中率100%: 画像検査のために手術を遅らせない。",
+            "locale": "ja",
+            "template": "documented-authored-133636cab2e242294882"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os achados: 7 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "高リスク（5〜7）：直ちに外科的探査",
+            "locale": "ja",
+            "template": "documented-authored-4ae28094090310f5883b"
+          },
+          "note": {
+            "text": "導出研究では陽性的中率100%: 画像検査のために手術を遅らせない。",
+            "locale": "ja",
+            "template": "documented-authored-133636cab2e242294882"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Náuseas e testículo elevado: 2 pontos (baixo risco, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "कम जोखिम (0 से 2): टॉर्शन की संभावना कम",
+            "locale": "hi",
+            "template": "documented-authored-197df4610a31541722b9"
+          },
+          "note": {
+            "text": "व्युत्पत्ति में नकारात्मक पूर्वानुमानात्मक मूल्य 100% था: यदि नैदानिक चित्र संगत हो तो तत्काल अल्ट्रासोनोग्राफी की आवश्यकता नहीं है।",
+            "locale": "hi",
+            "template": "documented-authored-0793cd0e0330526ba4f9"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Edema e reflexo cremastérico ausente: 3 pontos (intermediário)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "मध्यम जोखिम (3 से 4)",
+            "locale": "hi",
+            "template": "documented-authored-14384c2b12ac788ec7e2"
+          },
+          "note": {
+            "text": "तत्काल डॉप्लर अल्ट्रासोनोग्राफी, संदेह होने पर अन्वेषण में देरी किए बिना।",
+            "locale": "hi",
+            "template": "documented-authored-62e650bece8041991292"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Edema, testículo endurecido e cremastérico ausente: 5 pontos (alto, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "उच्च जोखिम (5 से 7): तुरंत शल्य अन्वेषण",
+            "locale": "hi",
+            "template": "documented-authored-4ae28094090310f5883b"
+          },
+          "note": {
+            "text": "व्युत्पत्ति में, धनात्मक पूर्वानुमानात्मक मान 100%: इमेजिंग के लिए सर्जरी में देरी न करें।",
+            "locale": "hi",
+            "template": "documented-authored-133636cab2e242294882"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os achados: 7 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "उच्च जोखिम (5 से 7): तुरंत शल्य अन्वेषण",
+            "locale": "hi",
+            "template": "documented-authored-4ae28094090310f5883b"
+          },
+          "note": {
+            "text": "व्युत्पत्ति में, धनात्मक पूर्वानुमानात्मक मान 100%: इमेजिंग के लिए सर्जरी में देरी न करें।",
+            "locale": "hi",
+            "template": "documented-authored-133636cab2e242294882"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

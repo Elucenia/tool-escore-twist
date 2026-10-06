@@ -71,3 +71,35 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Low risk (0 to 2): torsion unlikely
+
+In derivation, negative predictive value of 100%: urgent ultrasound is not needed if the clinical picture is concordant.
+
+
+### 2
+
+Intermediate risk (3 to 4)
+
+Urgent Doppler ultrasonography, without delaying exploration if there is doubt.
+
+
+### 3
+
+High risk (5 to 7): immediate surgical exploration
+
+In derivation, positive predictive value of 100%: do not delay surgery for imaging.
+
+
+### 4
+
+High risk (5 to 7): immediate surgical exploration
+
+In derivation, positive predictive value of 100%: do not delay surgery for imaging.
+

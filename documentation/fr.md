@@ -71,3 +71,35 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Risque faible (0 à 2) : torsion improbable
+
+Dans la dérivation, valeur prédictive négative de 100 % : l'échographie en urgence n'est pas nécessaire si le tableau clinique est concordant.
+
+
+### 2
+
+Risque intermédiaire (3 à 4)
+
+Échographie Doppler en urgence, sans retarder l’exploration en cas de doute.
+
+
+### 3
+
+Risque élevé (5 à 7) : exploration chirurgicale immédiate
+
+Lors de la dérivation, valeur prédictive positive de 100 % : ne retardez pas la chirurgie pour l’imagerie.
+
+
+### 4
+
+Risque élevé (5 à 7) : exploration chirurgicale immédiate
+
+Lors de la dérivation, valeur prédictive positive de 100 % : ne retardez pas la chirurgie pour l’imagerie.
+

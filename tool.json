@@ -268,7 +268,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "TWIST/Barbosa 2013:5 fatores ponderados, total 0–7",
-    "implementationVersion": "escore-twist@native-2026-10-03+5a1daba0ac54",
+    "implementationVersion": "escore-twist@native-2026-10-05+2fd10612bea7",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/23103800/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -504,7 +504,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "5a1daba0ac54a890546047dfa71cd9a59b10b7f61fdb46790192b9218c2aab14"
+      "implementationHash": "2fd10612bea77a7f67bacb544578d387a092e8b689b774ffc184d5feb7f53eab",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "escore-twist@native-2026-10-03+5a1daba0ac54",
+          "previousImplementationHash": "5a1daba0ac54a890546047dfa71cd9a59b10b7f61fdb46790192b9218c2aab14",
+          "implementationHash": "2fd10612bea77a7f67bacb544578d387a092e8b689b774ffc184d5feb7f53eab",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "889a0d7a0b1a8a97629277d4849e6448e4fdde06a769ed31978f4940320c22d5",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O TWIST 2013 foi inicialmente desenvolvido em crianças com escroto agudo, com exame por urologista e ultrassonografia em todos os 338 pacientes da coorte prospectiva. Os cortes 2 e 5 foram avaliados também retrospectivamente; os autores ainda solicitaram validação prospectiva. Esses resultados não garantem ausência de torção em uma pessoa nem substituem avaliação urgente de uma possível emergência cirúrgica.",
     "sourceLimitEvidence": {
@@ -523,20 +551,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/escore-twist/calculator.js",
-    "bytes": 4968,
-    "sha256": "5a1daba0ac54a890546047dfa71cd9a59b10b7f61fdb46790192b9218c2aab14"
+    "bytes": 5173,
+    "sha256": "2fd10612bea77a7f67bacb544578d387a092e8b689b774ffc184d5feb7f53eab"
   },
-  "sourceToolSha256": "1edf2446783ec91141e6f6182a57e8baed4b64676f100ad2872082e98891732a",
+  "sourceToolSha256": "edf99f6da9f0c051d7c4f1182804e582304d5dee60bec688235f191e9104a0c7",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "24a6f21ccffd344f5577cbdc9881229863dc55a02139f10dbb15b29c3a000df1",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "24a6f21ccffd344f5577cbdc9881229863dc55a02139f10dbb15b29c3a000df1",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

@@ -71,3 +71,35 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Riesgo bajo (0 a 2): torsión improbable
+
+En la derivación, valor predictivo negativo de 100%: no se requiere ultrasonografía urgente si el cuadro clínico es concordante.
+
+
+### 2
+
+Riesgo intermedio (3 a 4)
+
+Ecografía Doppler urgente, sin retrasar la exploración si hay duda.
+
+
+### 3
+
+Alto riesgo (5 a 7): exploración quirúrgica inmediata
+
+En la derivación, valor predictivo positivo de 100%: no retrase la cirugía por estudios de imagen.
+
+
+### 4
+
+Alto riesgo (5 a 7): exploración quirúrgica inmediata
+
+En la derivación, valor predictivo positivo de 100%: no retrase la cirugía por estudios de imagen.
+

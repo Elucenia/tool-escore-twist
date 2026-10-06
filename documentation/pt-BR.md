@@ -71,3 +71,35 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Baixo risco (0 a 2): torção improvável
+
+Na derivação, valor preditivo negativo de 100%: dispensa ultrassonografia de urgência se o quadro clínico for concordante.
+
+
+### 2
+
+Risco intermediário (3 a 4)
+
+Ultrassonografia com Doppler de urgência, sem atrasar a exploração se houver dúvida.
+
+
+### 3
+
+Alto risco (5 a 7): exploração cirúrgica imediata
+
+Na derivação, valor preditivo positivo de 100%: não atrase a cirurgia por exame de imagem.
+
+
+### 4
+
+Alto risco (5 a 7): exploração cirúrgica imediata
+
+Na derivação, valor preditivo positivo de 100%: não atrase a cirurgia por exame de imagem.
+
